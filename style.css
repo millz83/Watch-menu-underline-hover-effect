@@ -1,0 +1,78 @@
+body {
+    background-image: url("https://images.pexels.com/photos/2922718/pexels-photo-2922718.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    height:100vh;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+}
+
+.slogan {
+    font-size:34px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:goldenrod;
+
+}
+
+.site-nav {
+    border-bottom:2px solid  rgba(255,255,255,0.2);
+
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+ul:hover:not(:hover) a {
+    opacity:0.4;
+
+
+}
+
+ul li {
+    position: relative;
+    padding:30px 25px 30px 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+ul li::after {
+    position: absolute;
+    content:"";
+    top:100%;
+    width:100%;
+    left:0;
+    height:2px;
+    background:goldenrod;
+    transform: scale(0);
+    transition:0.4 cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+ul li:hover::after ,
+ul li.active::after{
+    transform:scaleX(1);
+}
+
+ul li a {
+    position: relative;
+    color:goldenrod;
+    text-decoration: none;
+    display:flex;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.4s (cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+
+}
